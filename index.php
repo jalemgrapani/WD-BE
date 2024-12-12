@@ -309,7 +309,6 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link" href="#embed">Spotify Widget</a></li>
             </ul>
         </div>
     </nav>
@@ -344,7 +343,7 @@
         <p class="text-white" style="font-size: 20px; margin-bottom: 50px;">Click the button below to be redirected to
             the Island of Personality.</p>
         <div class="d-flex justify-content-center flex-wrap gap-3">
-            <a href="A08/index.html" class="btn btn-light btn-lg bg-transparent text-white border-white btn-slide-left">
+            <a href="A08/index.php" class="btn btn-light btn-lg bg-transparent text-white border-white btn-slide-left">
                 <i class="fas fa-brain me-2"></i> Core Memories
             </a>
         </div>
@@ -371,14 +370,6 @@
                 <i class="fas fa-phone-alt"></i>
             </a>
         </div>
-    </div>
-
-    <div class="container" style="max-width: 1000px; margin: 0 auto;">
-        <iframe id="embed" style="border-radius:12px; margin-bottom: 20px;"
-            src="https://open.spotify.com/embed/playlist/1GyatgIlt1uFqvTfgHbVRy?utm_source=generator&loop=true"
-            width="100%" height="352" frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-        </iframe>
     </div>
 
     <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
