@@ -11,12 +11,10 @@ $result = executeQuery($query);
     <title>Core Memories - Inside Out</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        /* General Styles */
         body {
             background-color: #1D2951;
             color: white;
@@ -25,7 +23,6 @@ $result = executeQuery($query);
             padding: 0;
         }
 
-        /* Navbar */
         .navbar .nav-link {
             color: white;
             font-weight: bold;
@@ -63,7 +60,6 @@ $result = executeQuery($query);
             color: white;
         }
 
-        /* Header Section */
         header {
             background-color: #1D2951;
             color: white;
@@ -71,7 +67,6 @@ $result = executeQuery($query);
             text-align: center;
         }
 
-        /* Projects Section */
         #projects {
             background-color: #1D2951;
             padding: 50px 0;
@@ -97,7 +92,6 @@ $result = executeQuery($query);
             margin-bottom: 20px;
         }
 
-        /* Footer Section */
         footer {
             background-color: #1D2951;
             color: white;
@@ -124,7 +118,6 @@ $result = executeQuery($query);
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand">Core Memories</a>
@@ -135,7 +128,7 @@ $result = executeQuery($query);
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/WD-BE/index.html">Home</a>
+                        <a class="nav-link" href="/WD-BE/index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Island of Personality</a>
@@ -145,13 +138,11 @@ $result = executeQuery($query);
         </div>
     </nav>
 
-    <!-- Header -->
     <header>
         <h1>Core Memories</h1>
         <p class="fs-4">Explore the Islands of Personality</p>
     </header>
 
-    <!-- Projects Section -->
 <div id="projects" class="container">
     <h1 class="title1 text-center">Jalem's Island of Personality</h1>
     <p class="fs-5 text-center">Click the images below to be redirected to specific Islands of Personality.</p>
@@ -164,7 +155,7 @@ $result = executeQuery($query);
                 ?>
                 <div class="col-12 col-sm-6 col-md-3 text-center">
                     <a href="view.php?islandOfPersonalityID=<?php echo $islandOfPersonalityID; ?>">
-                        <img src="pictures/<?php echo $image; ?>" alt="Island Image" class="img-fluid mx-auto">
+                        <img src="pictures/<?php echo $image; ?>" class="img-fluid mx-auto">
                     </a>
                 </div>
                 <?php
@@ -174,8 +165,6 @@ $result = executeQuery($query);
     </div>
 </div>
 
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="d-flex justify-content-center mb-4" style="font-size: 1.5rem;">
@@ -198,7 +187,6 @@ $result = executeQuery($query);
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

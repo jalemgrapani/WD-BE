@@ -18,9 +18,9 @@ if (isset($_GET['islandOfPersonalityID'])) {
     $islandResult = executeQuery($islandQuery);
 
     if ($row = mysqli_fetch_assoc($islandResult)) {
-        $name = $row['name']; 
-        $color = $row['color']; // Get the color
-        $firstRow = $row; 
+        $name = $row['name'];
+        $color = $row['color']; 
+        $firstRow = $row;
     }
 
     $islandResult = executeQuery($islandQuery);
@@ -39,7 +39,9 @@ if (isset($_GET['islandOfPersonalityID'])) {
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: <?php echo $color; ?>;
+            background-color:
+                <?php echo $color; ?>
+            ;
             color: white;
             margin: 0;
             padding: 0;
@@ -48,7 +50,7 @@ if (isset($_GET['islandOfPersonalityID'])) {
 
         h1 {
             font-family: 'Fredoka One', sans-serif;
-            color: white; 
+            color: white;
         }
 
         .back-button {
@@ -78,11 +80,13 @@ if (isset($_GET['islandOfPersonalityID'])) {
             object-fit: cover;
             border-radius: 10px;
             display: block;
-            margin: 0 auto; /* Center the image */
+            margin: 0 auto;
         }
 
         footer {
-            background-color: <?php echo $color; ?>; 
+            background-color:
+                <?php echo $color; ?>
+            ;
         }
 
         footer a {
@@ -102,7 +106,7 @@ if (isset($_GET['islandOfPersonalityID'])) {
     <div class="container my-5">
         <div class="row">
             <div class="col-12 text-center mb-4">
-                <h1><?php echo $name; ?></h1> 
+                <h1><?php echo $name; ?></h1>
             </div>
             <?php
             while ($row = mysqli_fetch_assoc($islandResult)) {
@@ -119,7 +123,7 @@ if (isset($_GET['islandOfPersonalityID'])) {
                         </div>
                     </div>
                 </div>
-            <?php
+                <?php
             }
             ?>
         </div>
